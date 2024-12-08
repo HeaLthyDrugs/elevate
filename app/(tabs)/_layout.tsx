@@ -3,6 +3,8 @@ import React from 'react';
 import { Platform } from 'react-native';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { AntDesign } from '@expo/vector-icons';
+import TabBar from '@/components/TabBar';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -20,19 +22,57 @@ export default function TabLayout() {
           },
           default: {},
         }),
-      }}>
+      }}
+      tabBar={(props) => <TabBar {...props} />}
+    >
       <Tabs.Screen
         name="index"
         options={{
           title: 'Home',
-          
+          headerShown: true,
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name="home" size={24} color="black" />
+          ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="habits"
         options={{
-          title: 'Explore',
-          
+          title: 'Habits',
+          headerShown: true,
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name="home" size={24} color="black" />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="ai"
+        options={{
+          title: 'AI',
+          headerShown: true,
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name="home" size={24} color="black" />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="knowledge"
+        options={{
+          title: 'Knowledge',
+          headerShown: true,
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name="home" size={24} color="black" />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="progress"
+        options={{
+          title: 'Progress',
+          headerShown: true,
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name="home" size={24} color="black" />
+          ),
         }}
       />
     </Tabs>

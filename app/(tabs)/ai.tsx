@@ -1,10 +1,10 @@
 import { StyleSheet, Image, Platform, View, Text } from 'react-native';
 
 
-export default function TabTwoScreen() {
+export default function AI() {
   return (
     <View>
-    <Text>Hello Explore</Text>
+    <Text>Hello AI</Text>
   </View>
   );
 }
