@@ -65,16 +65,6 @@ export default function TabLayout() {
           ),
         }}
       />
-      <Tabs.Screen
-        name="progress"
-        options={{
-          title: 'Progress',
-          headerShown: true,
-          tabBarIcon: ({ color, size }) => (
-            <AntDesign name="home" size={24} color="black" />
-          ),
-        }}
-      />
     </Tabs>
   );
 }
