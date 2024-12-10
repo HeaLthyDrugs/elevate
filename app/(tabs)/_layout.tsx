@@ -29,7 +29,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
-          headerShown: true,
+          // headerShown: true,
           tabBarIcon: ({ color, size }) => (
             <AntDesign name="home" size={24} color="black" />
           ),
@@ -39,7 +39,7 @@ export default function TabLayout() {
         name="habits"
         options={{
           title: 'Habits',
-          headerShown: true,
+          // headerShown: true,
           tabBarIcon: ({ color, size }) => (
             <AntDesign name="home" size={24} color="black" />
           ),
@@ -49,7 +49,7 @@ export default function TabLayout() {
         name="ai"
         options={{
           title: 'AI',
-          headerShown: true,
+          // headerShown: true,
           tabBarIcon: ({ color, size }) => (
             <AntDesign name="home" size={24} color="black" />
           ),
@@ -59,9 +59,19 @@ export default function TabLayout() {
         name="knowledge"
         options={{
           title: 'Knowledge',
-          headerShown: true,
+          // headerShown: true,
           tabBarIcon: ({ color, size }) => (
             <AntDesign name="home" size={24} color="black" />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          // headerShown: true,
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name="user" size={24} color="black" />
           ),
         }}
       />
