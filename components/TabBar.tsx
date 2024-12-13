@@ -104,7 +104,7 @@ export default  function TabBar({ state, descriptors, navigation } : BottomTabBa
   const styles = StyleSheet.create({
     tabbar: {
       position: 'absolute',
-      bottom: 30,
+      bottom: 12,
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -113,6 +113,6 @@ export default  function TabBar({ state, descriptors, navigation } : BottomTabBa
       paddingVertical: 12,
       borderRadius: 100,
       shadowColor: '#000',
-      elevation: 6,
+      elevation: 10,
     }
   });

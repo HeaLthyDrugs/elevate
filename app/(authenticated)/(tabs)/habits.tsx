@@ -97,7 +97,7 @@ export default function Habits() {
                 </View>
               </View>
               <View style={styles.streakContainer}>
-                <MaterialCommunityIcons name="fire" size={16} color="#FF9800" />
+                <MaterialCommunityIcons name="fire" size={16} color="#FF9800"/>
                 <Text style={styles.streakText}>{habit.streak}</Text>
               </View>
             </TouchableOpacity>
